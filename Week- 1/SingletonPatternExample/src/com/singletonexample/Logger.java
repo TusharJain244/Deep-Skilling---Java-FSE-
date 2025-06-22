@@ -1,4 +1,3 @@
-// src/com/singletonexample/Logger.java
 package com.singletonexample;
 
 public class Logger {
