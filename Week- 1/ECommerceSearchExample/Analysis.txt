@@ -1,0 +1,15 @@
+1. Compare the time complexity of linear and binary search algorithms.
+
+
+
+Algorithm	   Best-Case Time Complexity	    Average-Case Time Complexity	      Worst-Case Time Complexity	
+Linear Search	    O(1) (First element)	               O(n)	                    O(n) (Last element or not found)	
+    
+
+Binary Search	    O(1) (Middle element)	              O(logn)	                                O(logn) 
+
+
+
+2. Discuss which algorithm is more suitable for your platform and why.
+
+For an e-commerce platform, Binary Search (or algorithms with similar logarithmic or constant time complexity achieved through data structures like sorted arrays, balanced trees, or hash tables) is vastly more suitable than Linear Search due to the sheer volume of products and the need for very fast response times. The initial overhead of sorting or indexing is a worthwhile investment for the significant performance gains during frequent search operations.

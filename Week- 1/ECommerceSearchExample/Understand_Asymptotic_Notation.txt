@@ -1,0 +1,47 @@
+1. Explain Big O Notation and how it helps in analyzing algorithms.
+
+
+Big O Notation (O) is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. In computer science, it's used to classify algorithms according to how their running time or space requirements grow as the input size grows. Big O notation doesn't measure the exact execution time in seconds. Instead, it measures how the number of operations an algorithm performs scales with respect to the input size (n).
+
+Examples of Common Big O Notations:
+O(1): Constant time 
+O(logn): Logarithmic time
+O(n): Linear time 
+O(nlogn): Log-linear time 
+O(n^2): Exponential time (e.g., some recursive algorithms like finding all subsets).
+
+Big O notation helps in:
+
+It provides a standardized way to compare the efficiency of different algorithms, regardless of the hardware or programming language.
+It also allows developers to predict how an algorithm will perform as the input data scales up. An algorithm with O(n) will scale much better than one with O(n^2) for large inputs.
+Also, by understanding the time complexity, developers can make informed decisions about which algorithm is most suitable for a given problem and expected input size. For an e-commerce platform, where data scales rapidly, choosing algorithms with better asymptotic complexity is critical.
+
+
+
+
+2. Describe the best, average, and worst-case scenarios for search operations.
+
+
+
+These scenarios describe the minimum, typical, and maximum number of operations an algorithm might perform for a given input size.
+
+1.Best-Case Scenario (Omega Notation / Omega Notation):
+
+Describes the minimum amount of time an algorithm will take.
+For search operations, the best case occurs when the item being searched for is found immediately, usually at the very first position checked.
+Example (Linear Search): If the target product is the very first product in the array, the search takes just one comparison. Time complexity: O(1).
+Example (Binary Search): If the target product is the middle element on the first comparison, the search takes just one comparison. Time complexity: O(1).
+
+2. Average-Case Scenario (Theta Notation):
+
+Describes the expected amount of time an algorithm will take. It's often the most difficult to calculate as it involves probability distributions of inputs.
+For search operations, it represents the typical number of comparisons required across all possible inputs.
+Example (Linear Search): On average, you might expect to find the item around the middle of the list. Time complexity: O(n).
+Example (Binary Search): The average case is very close to the worst case for binary search, as it typically takes
+logn comparisons to narrow down the search space. Time complexity: O(logn).
+
+3. Worst-Case Scenario (O Notation / Big O Notation):
+
+Describes the maximum amount of time an algorithm will take, as it provides an upper bound guarantee.
+For search operations, the worst case occurs when the item is found at the last possible position, or not found at all, requiring the maximum number of comparisons.
+Example (Linear Search): If the target product is the very last product in the array, or if it's not present at all, the search has to examine every single product. Time complexity: O(n).
